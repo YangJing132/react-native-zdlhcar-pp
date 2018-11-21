@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#656460</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FF6900</color>
+    <color name="bar_bottom">#aaa8aa</color>
+    <color name="text_orange">#ff6900</color>
+    <color name="line_gray">#dcdcdc</color>
+    <color name="link_orange">#fc8b3c</color>
+    <color name="home_bottom_gray">#bebac9</color>
+    <color name="red">#dc2159</color>
+
+    <color name="bg_login">#FD7E01</color>
+    <color name="text_gray">#9a94aa</color>
+    <color name="text_black_33">#333333</color>
+    <color name="text_black_66">#666666</color>
+    <color name="text_black_99">#999999</color>
+    <color name="text_black_96">#827b96</color>
+    <color name="bg_gray">#F2F0F3</color>
+
+    <color name="blue">#0079ff</color>
+    <color name="divider">#7abaff</color>
+    <color name="pink">#ff448b</color>
+
+    <color name="content_color">#666666</color>
+    <color name="white_normal">#ffffffff</color>
+    <color name="login_button_background">#71c297</color>
+
+    <color name="divider_color">#FFB7B2B2</color>
+</resources>

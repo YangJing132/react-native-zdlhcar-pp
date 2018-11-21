@@ -1,0 +1,57 @@
+/**
+ * Created by Administrator on 2018/11/12.
+ */
+/**
+ * Created by ljunb on 16/6/2.
+ */
+import React, { Component } from 'react'
+import {
+    StyleSheet,
+    View,
+    Text,
+    ActivityIndicator
+} from 'react-native'
+import { PropTypes} from 'prop-types';
+export default class Loading extends Component {
+    static propTypes = {
+        isShow:PropTypes.bool,
+    }
+
+    render() {
+        if (!this.props.isShow) return null;
+
+        return (
+            <View style={styles.container}>
+                <View style={styles.loading}>
+                    <ActivityIndicator color="white"/>
+                    <Text style={styles.loadingTitle}>加载中……</Text>
+                </View>
+            </View>
+        )
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    loading: {
+        backgroundColor: 'gray',
+        height: 180,
+        width: 180,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    loadingTitle: {
+        marginTop: 10,
+        fontSize: 30,
+        color: 'white'
+    }
+})
