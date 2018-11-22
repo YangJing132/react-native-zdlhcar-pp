@@ -24,6 +24,7 @@ var storage = new Storage({
 
     // 数据过期时间，默认一整天（1000 * 3600 * 24 毫秒），设为null则永不过期
     defaultExpires: 1000 * 3600 * 24,
+    // defaultExpires: 5000,
 
     // 读写时在内存中缓存数据。默认启用。
     enableCache: true,

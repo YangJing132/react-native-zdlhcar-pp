@@ -76,10 +76,20 @@ export default class Login extends Component<props>{
             .then(responseData => {
                 // alert(JSON.stringify(responseData))
                 // 注意，这里使用了this关键字，为了保证this在调用时仍然指向当前组件，我们需要对其进行“绑定”操作
-                this.setState({
-                    isWrong:true,
-                    message:'登录成功'
-                });
+                // if(responseData.code == 1){
+                //     this.setState({
+                //         isWrong:true,
+                //         message:'登录失败'
+                //     });
+                // }else if(responseData.code == 200){
+                    this.setState({
+                        isWrong:true,
+                        message:'登录成功'
+                    });
+                    this.timerTwo =  setTimeout(()=>{
+                        this.props.navigation.navigate('Mine');
+                    },2000);
+                // }
                 this.timer =  setTimeout(()=>{
                     this.setState({
                         isWrong:false
@@ -100,9 +110,7 @@ export default class Login extends Component<props>{
                 });
                 global.user.loginState = true;//设置登录状态
                 global.user.userData = { userid: '1001', phone:this.state.phone, token: this.state.passWord};//保存用户数据
-                this.timerTwo =  setTimeout(()=>{
-                    this.props.navigation.navigate('Mine');
-                },2000);
+
 
             }).catch(error => {
                 alert(error)
